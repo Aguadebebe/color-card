@@ -1,0 +1,403 @@
+
+    
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+ :root {
+    --card-height: 70vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  h2 {
+    position: relative;
+    top: -44%;
+    left: 40%;
+  
+  }
+  h3 {
+    position: relative;
+    font-size: 1.4em;
+    top: -44%;
+    left: 45%;
+  }
+  
+   body {
+     padding: 25px;
+      background: radial-gradient(black, yellow, darkorchid, blue);
+     
+    color: black;
+    font-size: 20px;
+   
+      height: 100vh;
+      display: grid;
+      place-items: center;
+        
+      font-style: italic;
+      font-size: 1.4em;
+    }
+.dark-mode {
+     color: radial-gradient(black, yellow, darkorchid, blue);
+     background: black;
+     
+}
+
+  
+    #pushMeBtn {
+      background: radial-gradient(blue, yellow);
+      border-radius: 23px;
+      color: gold;
+     font-size: .9em;
+     position: relative;
+     right: 10%;
+     top: 40%;
+     cursor: pointer;
+     }
+    
+    .card {
+      background: radial-gradient(pink, rgb(255, 0, 132));
+      width: var(--card-width);
+      height: var(--card-height);
+      padding: 3px;
+      position: relative;
+      /*background-image: radial-gradient(black, yellow);*/
+      border-radius: 20px;
+      border-width:  thick 20px;
+      /*background-image: linear-gradient(
+        var(--rotate)
+        , #5ddcff, #3c67e3 43%, #4e00c2);
+        position: absolute;
+        z-index: -1;
+        top: -1%;
+        left: -2%;
+        animation: spin 2.5s linear infinite;*/
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1em ;
+      display: flex;
+      color: white;
+      cursor: pointer;
+      font-family: cursive;
+      
+}
+    
+  
+   .translate-rotate {
+    transform: translateX(180px) rotate(360deg);
+  }
+    
+    #pushMe2Btn  {
+      background: radial-gradient(pink, yellow, red);
+      border-radius: 23px;
+      color: indigo;
+     font-size: .9em;
+     position: relative;
+     right: 1%;
+     top: 36%;
+     cursor: pointer;
+     
+    }
+    
+    
+    
+    
+    
+    #backBtn {
+      background: radial-gradient(black, orange);
+      border-radius: 23px;
+      color:darkorange;
+      font-size: 1.7em;
+      font-family: cursive;
+      cursor:pointer;
+    }
+  
+      
+   #swirlBtn {
+        background: radial-gradient(green, yellow, darkorchid, red);
+        border-radius: 23px;
+        color:red;
+        position: relative;
+        right: 38%;
+        top: 12%;
+        font-size: 1.4em;
+        font-family: cursive;
+        cursor:pointer;
+    
+       }
+  
+  #darkModeBtn {
+    background: black;
+    color: white;
+   position: absolute;
+   top: 43%;
+   left: 40%;
+    border-radius: 20px;
+      border-color: yellow;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  }
+
+ #stopPulseBtn {
+  background: yellow;
+    color: red;
+   position: absolute;
+   top: 89%;
+   left: 68%;
+    border-radius: 20px;
+      border-color: chartreuse;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  
+}
+
+ #pulseBtn {
+  background: orange;
+    color: blue;
+   position: absolute;
+   top: 33%;
+   left: 40%;
+    border-radius: 20px;
+      border-color: chartreuse;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+}
+.pulse {
+  animation: pulse .2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  50% {
+    opacity: 0.5;
+    transform: scale(0.95)
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+
+.shrink {
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform 2000ms ease-in-out;
+    transform-origin: right top;
+  }
+  .shrink {
+    transform: scale(.01);
+  }
+  
+  .expand {
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform 2000ms ease-in-out;
+    transform-origin: left top;
+  }
+  .expand {
+    transform: scale(1.0);
+  }
+  
+  .removed {
+    transform: translateX(150vw);
+    
+  }
+  
+  #show{
+    transition: transform  4s;
+  }
+  
+  .removed2{
+  transform: translateX(-0vw);
+  }
+  
+
+ #stopBigglesBtn {
+    background: brown;
+    color: salmon;
+   position: absolute;
+   top: 79%;
+   left: 0%;
+    border-radius: 20px;
+       border-color: yellow;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  }
+  
+
+ #huhBtn {
+  background: linear-gradient(black, yellow, red, green, aquamarine, black);
+    color: solid black;
+   position: absolute;
+   top: 70%;
+   left: 22%;
+    border-radius: 20px;
+      border-color: white;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.ellipse {
+  animation: ellipse reverse 4s ease-in-out infinite;
+}
+
+
+ #bigglesBtn { 
+background: brown;
+    color: lightblue;
+   position: absolute;
+   top: 52%;
+   left: 15%;
+    border-radius: 15px;
+      border-color: black;
+    font-size: .9em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+   
+  }
+
+.animate {
+    animation: animate 4s  ease-in-out  infinite ;
+  }
+
+@keyframes animate {
+  0% {
+    transform: scale(1)
+  }
+  
+  10% {
+    transform: scale(1.2) translateX(15%)
+  }
+  20% {
+    transform: scale(1.1) translateX(-20%)
+  }
+  30% {
+    transform: scale(1.7) translateX(12%)
+  }
+  40% {
+    transform: scale(1.6) translateX(-15%)
+  }
+  50% {
+    transform: scale(1.9) translateY(10%)
+  }
+  60% {
+    transform: scale(1.8) translateY(-10%)
+  }
+  70% {
+    transform: scale(2.2) translateX(3%)
+  }
+  80% {
+    transform: scale(2.0) translateX(10%)
+  }
+  90% {
+    transform: scale(2.5) translateY(-17%)
+  }
+  100% {
+    transform: scale(1.1) translateX(25%)
+  }
+  0% {
+    transform: scale(1)
+  }
+}
+
+
+ #huh2Btn {
+  background:  black;
+    color: goldenrod;
+   position: absolute;
+   top: 61%;
+   left: 15%;
+    border-radius: 20px;
+     border-color: aquamarine;
+    font-size: .8em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.ellipseBack {
+  animation: ellipseBack 30s  infinite;
+}
+  
+
+#huhStopBtn {
+   background:  red;
+    color: white;
+   position: absolute;
+   top: 89%;
+   left: 15%;
+    border-radius: 20px;
+       border-color: black;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+
+
+
+@keyframes ellipse {
+ 
+  0% {
+    transform: scale(1)
+  }
+
+
+70% {
+			transform: scale(1.7)
+		}
+		 0% { clip-path: ellipse(80% 80%); }
+  70% { clip-path: ellipse(0% 20%); }
+		 
+  0% {
+			transform: scale(1)
+		}
+}
+ 
+ 
+
+
+
+
+ 
+
+ 
+  
+.ellipseBack {
+  animation: ellipseBack 5s   infinite alternate-reverse ;
+}
+
+@keyframes ellipseBack {
+  
+  0% {
+    transform: scale(1)
+  }
+  20% {
+    transform: scale(1.3)
+  }
+  
+   	0% { clip-path: ellipse(90% 70%); }
+  50% { clip-path: ellipse(0% 20%); }
+  60% {
+     transform: translateX(180px) rotate(720deg);
+  }
+  0% {
+    transform: scale(1)
+  }
+}
+ 
+  
+  
